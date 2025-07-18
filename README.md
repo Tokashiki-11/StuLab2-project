@@ -27,7 +27,7 @@
 - Python 3.11.5
 - Flask 3.1.1
 
-管理者権限の追加方法
+### 管理者権限の追加方法
 
 (base) example@MacBook-Air project % flask shell
 
