@@ -1,11 +1,306 @@
+/* 全体の背景と上下分割 */
 body {
+    background-color: #fff7fc;
+    margin: 0;
     font-family: sans-serif;
-    text-align: center;
-    padding: 2em;
+    height: 100vh;
 }
 
+/* 画面を上下2分割するコンテナ */
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* 上半分：問題表示 */
+.question-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* 下半分：ボタン表示 */
+.button-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* タイトル（トップページ用） */
+h1 {
+    background-color: #4db8ff;
+    color: white;
+    font-size: 32px;
+    padding: 15px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px #ccc;
+    text-shadow: 1px 1px 0 #444;
+}
+
+/* スタートボタン */
 button {
-    font-size: 1.5em;
-    margin: 1em;
-    padding: 0.5em 1em;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #ccc;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+/* 問題文スタイル */
+.question-text {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ボタンを横に並べるが中央寄せで整える */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.button-group button {
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaa;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #ff9900;
+}
+
+/* 解説・スコア用 */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 旧.containerと.question-containerは不要なので削除 */
+
+/* 問題画面専用：画面全体を上下2分割 */
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff7fc;
+}
+
+/* 上半分：問題文表示エリア */
+.question-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* 問題文スタイル */
+.question-text {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 下半分：ボタン表示エリア */
+.button-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ボタン配置（横並び） */
+.button-group {
+    display: flex;
+    gap: 40px;
+}
+
+/* ボタン見た目 */
+.button-group button {
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaa;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #ff9900;
+}
+
+/* ホーム画面用コンテナ：縦中央寄せ */
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff7fc;
+    gap: 40px;
+}
+
+/* タイトルをオシャレに中央配置 */
+.title {
+    background-color: #4db8ff;
+    color: white;
+    font-size: 32px;
+    padding: 20px 40px;
+    border-radius: 16px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-shadow: 1px 1px 2px #333;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* スタートボタンを目立たせる */
+.start-button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 14px 36px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.start-button:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+/* スコア画面の全体中央寄せ */
+.score-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff7fc;
+}
+
+/* スコアカードを中央に表示＋装飾 */
+.score-card {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* スコア見出し */
+.score-card h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* スコアの詳細テキスト */
+.score-card p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #444;
+}
+
+/* トップへ戻るボタン */
+.back-button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+/* 共通：上下分割レイアウト */
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff7fc;
+}
+
+/* 上半分：解説表示 */
+.result-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+/* 解説テキスト */
+.explanation-text {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 下半分：ボタン */
+.button-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 次の問題へボタン（共通のボタンデザイン） */
+.next-button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.next-button:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
 }

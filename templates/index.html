@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>社会人マナークイズ</title>
+  <meta charset="UTF-8">
+  <title>社会人マナークイズ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>これだけは覚えとけ！社会人マナー</h1>
-    <a href="{{ url_for('start_quiz') }}"><button>スタート</button></a>
+  <div class="home-container">
+    <h1 class="title">これだけは絶対覚えとけ！<br>社会人マナー</h1>
+    <a href="{{ url_for('start_quiz') }}">
+      <button class="start-button">スタート</button>
+    </a>
+  </div>
 </body>
 </html>

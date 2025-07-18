@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
     <title>スコア</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h2>スコア</h2>
-    <p>{{ total }}問中 {{ correct }}問正解！</p>
-    <p>あなたの社会人レベル：{{ percentage }}%</p>
-    <a href="{{ url_for('index') }}"><button>トップへ戻る</button></a>
+    <div class="score-container">
+        <div class="score-card">
+            <h2>スコア</h2>
+            <p>{{ total }}問中 {{ correct }}問正解！</p>
+            <p>あなたの社会人レベル：{{ percentage }}%</p>
+            <a href="{{ url_for('index') }}">
+                <button class="back-button">トップへ戻る</button>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
