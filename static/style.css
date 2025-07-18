@@ -75,19 +75,22 @@ button:hover {
     gap: 40px;
 }
 
+/* 共通のボタンスタイル（リセット） */
 .button-group button {
-    padding: 12px 24px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: none;
-    background-color: orange;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px #aaa;
-    transition: background-color 0.3s;
+  font-size: 32px;
+  padding: 20px 36px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.button-group button:hover {
-    background-color: #ff9900;
+/* ◯ボタン：赤＋白文字 */
+.circle-button {
+  background-color: #e53935;
+  color: white;
 }
 
 /* 解説・スコア用 */
@@ -139,16 +142,14 @@ button:hover {
     gap: 40px;
 }
 
-/* ボタン見た目 */
 .button-group button {
     padding: 12px 24px;
     font-size: 20px;
     border-radius: 8px;
     border: none;
-    background-color: orange;
     cursor: pointer;
     box-shadow: 2px 2px 5px #aaa;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .button-group button:hover {
@@ -302,5 +303,29 @@ button:hover {
 
 .next-button:hover {
     background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+/* ◯ボタン：赤＋白文字 */
+.circle-button {
+    background-color: #e53935;
+    color: white;
+}
+
+.circle-button:hover {
+    background-color: #c62828;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ×ボタン：青＋白文字 */
+.cross-button {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.cross-button:hover {
+    background-color: #1565c0;
+    color: white;
     transform: scale(1.05);
 }
