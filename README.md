@@ -41,10 +41,10 @@ App: app
 
 Instance: /Users/tokashikianzu/StuLab2/project/instance
 
->>> from models import db, Admin
+- from models import db, Admin
 
->>> admin = Admin(username="admin", password="admin123")
+- admin = Admin(username="任意のユーザー名", password="任意のパスワード")
 
->>> db.session.add(admin)
+- db.session.add(admin)
 
->>> db.session.commit()
+- db.session.commit()
