@@ -329,3 +329,60 @@ button:hover {
     color: white;
     transform: scale(1.05);
 }
+
+
+
+/*問題の装飾*/
+.question-area {
+    background-color: #fdf6e3;       /* 柔らかい背景色 */
+    border: 2px solid #ccc;          /* グレーの枠線 */
+    border-radius: 12px;             /* 角を丸く */
+    padding: 20px;                   /* 内側の余白 */
+    margin: 20px auto;               /* 上下に余白を取り、中央寄せ */
+    width: 80%;                      /* 横幅を調整 */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* うっすら影を付ける */
+}
+
+.question-text {
+    font-size: 1.5em;                /* フォントサイズを大きく */
+    font-weight: bold;              /* 太字 */
+    text-align: center;             /* 中央揃え */
+    color: #333;                    /* 濃いめの文字色 */
+}
+
+/*結果の装飾*/
+.result-area {
+    background-color: #fdf6e3;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-area h2.correct {
+    display: inline-block;
+    background-color: #ffdada; /* 淡い赤 */
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #a30000;
+    font-weight: bold;
+}
+
+.result-area h2.incorrect {
+    display: inline-block;
+    background-color: #d6eaff; /* 淡い青 */
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #004488;
+    font-weight: bold;
+}
+
+.explanation-text {
+    margin-top: 16px;
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #333;
+}

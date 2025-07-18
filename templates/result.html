@@ -8,7 +8,9 @@
 <body>
     <div class="screen-container">
         <div class="result-area">
-            <h2>{{ "正解！" if result else "不正解…" }}</h2>
+            <h2 class="{{ 'correct' if result else 'incorrect' }}">
+            {{ "正解！" if result else "不正解…" }}
+            </h2>
             <p class="explanation-text">{{ explanation }}</p>
         </div>
         <div class="button-area">
