@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>クイズ問題</title>
+</head>
+<body>
+    <h2>Q. {{ q.question }}</h2>
+    <form method="post" action="{{ url_for('answer') }}">
+        <button name="answer" value="True">◯</button>
+        <button name="answer" value="False">×</button>
+    </form>
+</body>
+</html>

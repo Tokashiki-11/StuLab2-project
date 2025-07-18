@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>解説</title>
+</head>
+<body>
+    <h2>{{ "正解！" if result else "不正解…" }}</h2>
+    <p>{{ explanation }}</p>
+    <a href="{{ url_for('question') }}"><button>次の問題へ</button></a>
+</body>
+</html>
