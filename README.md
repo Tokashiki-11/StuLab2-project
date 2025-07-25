@@ -32,7 +32,7 @@
 (base) example@MacBook-Air project % flask shell
 Python 3.12.1 | packaged by Anaconda, Inc. | (main, Jan 19 2024, 09:45:58) [Clang 14.0.6 ] on darwin
 App: app
-Instance: /Users/tokashikianzu/StuLab2/project/instance
+Instance: /Users/example/StuLab2/project/instance
 >>> from models import db, Admin
 >>> admin = Admin(username="任意のユーザー名", password="任意のパスワード")
 >>> db.session.add(admin)
