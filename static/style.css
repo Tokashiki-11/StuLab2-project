@@ -392,11 +392,46 @@ button:hover {
     white-space: pre-wrap;
 }
 
-/* レスポンシブデザイン */
+/* スマホ用レイアウト調整：幅600px以下 */
 @media screen and (max-width: 600px) {
-  /* 画面全体の余白とフォント調整 */
-  body {
-    font-size: 16px;
-    padding: 10px;
+  /* ◯×ボタン大きめに */
+  .button-group {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .button-group button,
+  .circle-button,
+  .cross-button {
+    font-size: 24px;
+    padding: 20px 30px;
+    min-width: 100px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ボタン */
+  .next-button,
+  .back-button,
+  .start-button {
+    font-size: 22px;
+    padding: 16px 32px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* 正解・不正解 */
+  .result-area h2.correct,
+  .result-area h2.incorrect {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 16px;
+  }
+
+  /* 解説テキスト拡大 */
+  .explanation-text {
+    font-size: 18px;
+    line-height: 1.8;
   }
 }
