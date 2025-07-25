@@ -404,7 +404,7 @@ button:hover {
   .button-group button,
   .circle-button,
   .cross-button {
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px 30px;
     min-width: 100px;
     border-radius: 50px;
@@ -415,7 +415,7 @@ button:hover {
   .next-button,
   .back-button,
   .start-button {
-    font-size: 22px;
+    font-size: 16px;
     padding: 16px 32px;
     width: 90%;
     max-width: 300px;
