@@ -391,3 +391,12 @@ button:hover {
 .preformatted {
     white-space: pre-wrap;
 }
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 600px) {
+  /* 画面全体の余白とフォント調整 */
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
