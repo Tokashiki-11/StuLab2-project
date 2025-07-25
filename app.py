@@ -105,4 +105,4 @@ def delete(qid):
     return redirect(url_for('manage'))
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run()
