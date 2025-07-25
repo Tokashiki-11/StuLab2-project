@@ -398,42 +398,40 @@ button:hover {
   .button-group {
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .button-group button,
   .circle-button,
   .cross-button {
     font-size: 24px;
-    padding: 24px 40px;
-    min-width: 120px;
-    min-height: 80px;
+    padding: 20px 30px;
+    min-width: 100px;
     border-radius: 50px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   }
 
   /* ボタン */
   .next-button,
   .back-button,
   .start-button {
-    font-size: 24px;
-    padding: 18px 36px;
+    font-size: 22px;
+    padding: 16px 32px;
     width: 90%;
-    max-width: 350px;
+    max-width: 300px;
   }
 
   /* 正解・不正解 */
   .result-area h2.correct,
   .result-area h2.incorrect {
-    font-size: 24px;
-    padding: 12px 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 16px;
   }
 
   /* 解説テキスト拡大 */
   .explanation-text {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8;
   }
 }
